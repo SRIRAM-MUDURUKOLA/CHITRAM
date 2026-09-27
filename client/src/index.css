@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #141414;
+    color: #e5e5e5;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+}
+
+/* Custom Netflix sleek scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E50914;
+}
+
+/* Hide scrollbar for carousel sliders */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Screen curve illuminated glow */
+.screen-glow {
+  height: 12px;
+  border-radius: 50% 50% 0 0;
+  box-shadow: 0 -15px 35px 8px rgba(229, 9, 20, 0.45);
+  background: linear-gradient(180deg, #E50914 0%, rgba(229, 9, 20, 0) 100%);
+}
+
+.text-netflix-bebas {
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  letter-spacing: 1.5px;
+}
